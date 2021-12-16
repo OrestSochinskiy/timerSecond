@@ -1,0 +1,66 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+
+<header></header>
+<section>
+  <div class="wrapper">
+    <div *ngIf="!timeBt"  id="countdown">
+      <div class="cd-box">
+        <p class="numbers days">{{daysToDday}}</p><br>
+        <p class="strings timeRefDays">Days</p>
+      </div>
+      <div class="cd-box">
+        <p class="numbers hours">{{hoursToDday}}</p><br>
+        <p class="strings timeRefHours">Hours</p>
+      </div>
+      <div class="cd-box">
+        <p class="numbers minutes">{{minutesToDday}}</p><br>
+        <p class="strings timeRefMinutes">Minutes</p>
+      </div>
+      <div class="cd-box">
+        <p class="numbers seconds">{{secondsToDday}}</p><br>
+        <p class="strings timeRefSeconds">Seconds</p>
+      </div>
+    </div>
+    <!-- end div#countdown -->
+    <div *ngIf="timeBt" class="birthday-card">
+      <div class="card">
+        <div class="cake">
+          <div class="cake-bottom"></div>
+          <div class="cake-middle"></div>
+          <div class="cake-top"></div>
+          <div class="candle"></div>
+          <div class="flame"></div>
+          <div class="shadow"></div>
+        </div>
+        <div class="confetti">
+          <div class="squareOne"></div>
+          <div class="squareTwo"></div>
+          <div class="squareThree"></div>
+          <div class="squareFour"></div>
+          <div class="squareFive"></div>
+          <div class="squareSix"></div>
+          <div class="squareSeven"></div>
+          <div class="squareEight"></div>
+          <div class="squareNine"></div>
+          <div class="squareTen"></div>
+        </div>
+        <div id="app">
+          <div class="container">
+            <div class="firework">
+              <div class="before"></div>
+              <div class="after"></div>
+            </div>
+          </div>
+      </div>
+        <div class="text ">Happy Birthday my Queen!</div>
+        </div>
+    </div>
+
+    <footer>
+      <p *ngIf="!timeBt" class="peshka">Ohhhhhhhh it's Bogdanna's birthday <strong>February 3st 2022</strong></p>
+      <br>
+
+    </footer>
+
+  </div>
+</section>
